@@ -11,17 +11,18 @@ selection = input(">>>").upper()
 
 #^^^^^^^^^
 
-if selection == "O":
-    # Oil option
+match selection:
+    case "O":
+        # Oil option
 
-    pass #TODO: remove me when code is added
-elif selection == "G":
-    # Gas option
+        pass #TODO: remove me when code is added
+    case "G":
+        # Gas option
 
-    pass #TODO: remove me when code is added
-else:
-    print("Invalid input, you should enter g/G or o/O")
-    exit()
+        pass #TODO: remove me when code is added
+    case _:
+        print("Invalid input, you should enter g/G or o/O")
+        exit()
 
 #taxes and output
 
