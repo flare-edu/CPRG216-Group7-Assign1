@@ -27,9 +27,10 @@ match selection:
 #taxes and output
 
 
-gst_percent = 0
-# placeholder, will be assigned above in province input
-province_code = 'ab'
+gst_percent = 0.0
+price_final = 2.0       # placeholder, will be assigned above based on input
+
+province_code = 'ab'    # placeholder, will be assigned above in province input
 
 match province_code:
     case 'ab':  # Alberta
@@ -40,3 +41,5 @@ match province_code:
         gst_percent = 0.13
     case _:     # Everywhere else
         gst_percent = 0.15
+
+price_final += price_final * gst_percent
