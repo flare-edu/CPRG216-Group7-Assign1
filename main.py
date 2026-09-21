@@ -24,3 +24,18 @@ else:
     exit()
 
 #taxes and output
+
+
+gst_percent = 0
+# placeholder, will be assigned above in province input
+province_code = 'ab'
+
+match province_code:
+    case 'ab':  # Alberta
+        gst_percent = 0.05
+    case 'bc':  # British Columbia
+        gst_percent = 0.05
+    case 'on':  # Ontario
+        gst_percent = 0.13
+    case _:     # Everywhere else
+        gst_percent = 0.15
