@@ -29,7 +29,6 @@ match selection:
 
 gst_percent = 0.0
 price_final = 2.0       # placeholder, will be assigned above based on input
-
 province_code = 'ab'    # placeholder, will be assigned above in province input
 
 match province_code:
