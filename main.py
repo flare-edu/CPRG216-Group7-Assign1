@@ -41,4 +41,7 @@ match province_code:
     case _:     # Everywhere else
         gst_percent = 0.15
 
+# Apply GST to final price
 price_final += price_final * gst_percent
+
+# To final output handling: 'price_final' is the variable you want to print for the price
