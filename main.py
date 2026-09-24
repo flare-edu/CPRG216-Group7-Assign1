@@ -14,11 +14,19 @@ selection = input(">>>").upper()
 match selection:
     case "O":
         # Oil option
-        print("You selected Oil.")
+        oil_cases = int(input("Enter # of cases of Oil: "))
+
+        if oil_cases <= 0:
+            print("Number of oil cases should be > 0.")
+            exit()
 
     case "G":
         # Gas option
-        print("You selected Gas.")
+        gas_litres = float(input("Enter the number of litres of gas: "))
+
+        if gas_litres <= 0:
+            print("Number of gas litres should be > 0.")
+            exit()
 
     case _:
         print("Invalid input, you should enter g/G or o/O")
