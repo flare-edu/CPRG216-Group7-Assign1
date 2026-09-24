@@ -14,12 +14,12 @@ selection = input(">>>").upper()
 match selection:
     case "O":
         # Oil option
+        print("You selected Oil.")
 
-        pass #TODO: remove me when code is added
     case "G":
         # Gas option
+        print("You selected Gas.")
 
-        pass #TODO: remove me when code is added
     case _:
         print("Invalid input, you should enter g/G or o/O")
         exit()
