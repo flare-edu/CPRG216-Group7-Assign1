@@ -31,7 +31,7 @@ gst_percent = 0.0
 price_final = 2.0       # placeholder, will be assigned above based on input
 province_code = 'ab'    # placeholder, will be assigned above in province input
 
-match province_code:
+match province_code.lower():
     case 'ab':  # Alberta
         gst_percent = 0.05
     case 'bc':  # British Columbia
