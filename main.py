@@ -30,11 +30,16 @@ match selection:
     case "G":
         # Gas option
         GAS_LITRES = float(input("Enter the number of litres of gas: "))
-
+        province_code = input("Please enter the 2 letters of province abbreviation: ")
+       
+        #Calculate Gas Price
         if GAS_LITRES <= 0:
             print("Number of gas litres should be > 0.")
             exit()
-
+        elif GAS_LITRES <= 2000:
+            price_final = GAS_LITRE_PRICE * GAS_LITRES
+        else:
+            price_final = (GAS_LITRE_PRICE * GAS_LITRES) * 0.90
     case _:
         print("Invalid input, you should enter g/G or o/O")
         exit()
