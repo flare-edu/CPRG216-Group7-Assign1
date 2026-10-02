@@ -1,4 +1,3 @@
-# code go here
 print("---------------------------------------------")
 print("*** Welcome to gas station program! ***")
 print("---------------------------------------------")
@@ -32,7 +31,7 @@ match selection:
         GAS_LITRES = float(input("Enter the number of litres of gas: "))
         province_code = input("Please enter the 2 letters of province abbreviation: ")
        
-        #Calculate Gas Price
+        # Calculate Gas Price
         if GAS_LITRES <= 0:
             print("Number of gas litres should be > 0.")
             exit()
@@ -44,8 +43,7 @@ match selection:
         print("Invalid input, you should enter g/G or o/O")
         exit()
 
-#taxes and output
-
+# Taxes and output
 gst_percent = 0.0
 
 match province_code.lower():
@@ -62,14 +60,12 @@ match province_code.lower():
 price_before_tax = price_final
 price_final += price_final * gst_percent
 
-# To final output handling: 'price_final' is the variable you want to print for the price
-
-#Output
+# Output
 price_before_discount = price_before_tax
 
-# Match case conatins the entire output
+# Match case contains the entire output
 match selection:
-    # Checks if cases needs to be multiplied by 12
+    # Checks if cases need to be multiplied by 12
     case "O":
         # In case there was a price before the discount, otherwise outputs price_final
         if OIL_CASES > 6:
