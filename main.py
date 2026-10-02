@@ -1,11 +1,11 @@
 # code go here
-print("--------------------------------------")
-print("*** Welcome to gas station program ***")
-print("--------------------------------------")
+print("---------------------------------------------")
+print("*** Welcome to gas station program! ***")
+print("---------------------------------------------")
 print("Please select the type of purchase:")
 print("G: Gas")
 print("O: Oil")
-selection = input(">>>").upper()
+selection = input(">>> ").upper()
 
 # Define constants
 GAS_LITRE_PRICE = 1.05
@@ -74,16 +74,18 @@ match selection:
         # In case there was a price before the discount, otherwise outputs price_final
         if OIL_CASES > 6:
             price_before_discount /= .90
-        print('---------------------------------------------------------------------------------------------------')
+        print('----------------------------------------------------------------------------------------------------')
         print(' Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price')
         print(f'    {'Oil':<12}{(OIL_CASES*12):<19}{price_before_discount:<25}{price_before_tax:<18}{price_before_tax * gst_percent:<11}{price_final}')
-        print('---------------------------------------------------------------------------------------------------')
+        print('----------------------------------------------------------------------------------------------------')
 
     case "G":
         # In case there was a price before the discount, otherwise outputs price_final
         if GAS_LITRES > 2000:
             price_before_discount /= .90
-        print('---------------------------------------------------------------------------------------------------')
+        print('----------------------------------------------------------------------------------------------------')
         print(' Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price')
-        print(f'    {'Gas':<12}{(GAS_LITRES):<19}{price_before_discount:<25}{price_before_tax:<18}{(price_before_tax * gst_percent):<11}{price_final}')
-        print('---------------------------------------------------------------------------------------------------')
+        print(f'   {'Gas':<12}{(GAS_LITRES):<19}{price_before_discount:<25}{price_before_tax:<18}{(price_before_tax * gst_percent):<12}{price_final}')
+        print('----------------------------------------------------------------------------------------------------')
+
+print('Thank you for your business, Good Bye')
