@@ -15,27 +15,29 @@ match selection:
     case "O":
         # Oil option
         OIL_CASES = int(input("Enter # of cases of Oil: "))
-        province_code = input("Please enter the 2 letters of province abbreviation: ")
-
-        # Calculate oil price 
+        # Error Check
         if OIL_CASES <= 0:
             print("Number of oil cases should be > 0.")
             exit()
-        elif OIL_CASES < 7:
+        province_code = input("Please enter the 2 letters of province abbreviation: ")
+
+        # Calculate oil price 
+        if OIL_CASES < 7:
             price_final = (OIL_CASES * LITRES_PER_CASE) * OIL_LITRE_PRICE
         else:
             price_final = ((OIL_CASES * LITRES_PER_CASE) * OIL_LITRE_PRICE) * 0.90
 
     case "G":
         # Gas option
-        GAS_LITRES = float(input("Enter the number of litres of gas: "))
-        province_code = input("Please enter the 2 letters of province abbreviation: ")
-       
-        # Calculate Gas Price
+        GAS_LITRES = int(input("Enter the number of litres of gas: "))
+        # Error Check
         if GAS_LITRES <= 0:
             print("Number of gas litres should be > 0.")
             exit()
-        elif GAS_LITRES <= 2000:
+        province_code = input("Please enter the 2 letters of province abbreviation: ")
+       
+        # Calculate Gas Price
+        if GAS_LITRES <= 2000:
             price_final = GAS_LITRE_PRICE * GAS_LITRES
         else:
             price_final = (GAS_LITRE_PRICE * GAS_LITRES) * 0.90
@@ -72,7 +74,7 @@ match selection:
             price_before_discount /= .90
         print('----------------------------------------------------------------------------------------------------')
         print(' Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price')
-        print(f'    {'Oil':<12}{(OIL_CASES*12):<19}{price_before_discount:<25}{price_before_tax:<18}{price_before_tax * gst_percent:<11}{price_final}')
+        print(f'   {'Oil':<13}{(OIL_CASES*12):<19}{price_before_discount:<25}{price_before_tax:<18}{price_before_tax * gst_percent:<12}{price_final}')
         print('----------------------------------------------------------------------------------------------------')
 
     case "G":
