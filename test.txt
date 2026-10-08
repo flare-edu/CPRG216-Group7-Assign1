@@ -20,7 +20,7 @@ Please enter the 2 letters of province abbreviation: ab
  Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price
    Gas         5000               5250.0                   4725.0            236.25      4961.25
 ----------------------------------------------------------------------------------------------------
-Thank you for your business, Good Bye
+Thanks for your business, Good Bye
 
 ---------------------------------------------
 *** Welcome to gas station program! ***
@@ -28,14 +28,44 @@ Thank you for your business, Good Bye
 Please select the type of purchase:
 G: Gas
 O: Oil
->>> g
+>>> G
 Enter the number of litres of gas: 1500
-Please enter the 2 letters of province abbreviation: on
+Please enter the 2 letters of province abbreviation: ON
 ----------------------------------------------------------------------------------------------------
  Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price
    Gas         1500               1575.0                   1575.0            204.75      1779.75
 ----------------------------------------------------------------------------------------------------
-Thank you for your business, Good Bye
+Thanks for your business, Good Bye
+
+---------------------------------------------
+*** Welcome to gas station program! ***
+---------------------------------------------
+Please select the type of purchase:
+G: Gas
+O: Oil
+>>> o
+Enter # of cases of Oil: 10
+Please enter the 2 letters of province abbreviation: ab
+----------------------------------------------------------------------------------------------------
+ Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price
+   Oil          120                150.0                    135.0             6.75        141.75
+----------------------------------------------------------------------------------------------------
+Thanks for your business, Good Bye
+
+---------------------------------------------
+*** Welcome to gas station program! ***
+---------------------------------------------
+Please select the type of purchase:
+G: Gas
+O: Oil
+>>> O
+Enter # of cases of Oil: 5
+Please enter the 2 letters of province abbreviation: on
+----------------------------------------------------------------------------------------------------
+ Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price
+   Oil          60                 75.0                     75.0              9.75        84.75
+----------------------------------------------------------------------------------------------------
+Thanks for your business, Good Bye
 
 ---------------------------------------------
 *** Welcome to gas station program! ***
@@ -50,7 +80,7 @@ Please enter the 2 letters of province abbreviation: NL
  Product    # Of Litres    Price Before Discount    Price After Discount      GST      Total Price
    Oil          72                 90.0                     90.0              13.5        103.5
 ----------------------------------------------------------------------------------------------------
-Thank you for your business, Good Bye
+Thanks for your business, Good Bye
 
 ---------------------------------------------
 *** Welcome to gas station program! ***
@@ -60,7 +90,7 @@ G: Gas
 O: Oil
 >>> o
 Enter # of cases of Oil: -2
-Number of oil cases should be > 0.
+Number of oil cases should be > 0
 
 ---------------------------------------------
 *** Welcome to gas station program! ***
@@ -69,5 +99,5 @@ Please select the type of purchase:
 G: Gas
 O: Oil
 >>> g
-Enter the number of litres of gas: -1
-Number of gas litres should be > 0.
+Enter the number of litres of gas: 0
+Number of gas litres should be > 0
