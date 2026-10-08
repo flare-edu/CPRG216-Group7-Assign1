@@ -17,7 +17,7 @@ match selection:
         OIL_CASES = int(input("Enter # of cases of Oil: "))
         # Error Check
         if OIL_CASES <= 0:
-            print("Number of oil cases should be > 0.")
+            print("Number of oil cases should be > 0")
             exit()
         province_code = input("Please enter the 2 letters of province abbreviation: ")
 
@@ -32,7 +32,7 @@ match selection:
         GAS_LITRES = int(input("Enter the number of litres of gas: "))
         # Error Check
         if GAS_LITRES <= 0:
-            print("Number of gas litres should be > 0.")
+            print("Number of gas litres should be > 0")
             exit()
         province_code = input("Please enter the 2 letters of province abbreviation: ")
        
@@ -86,4 +86,4 @@ match selection:
         print(f'   {'Gas':<12}{(GAS_LITRES):<19}{price_before_discount:<25}{price_before_tax:<18}{(price_before_tax * gst_percent):<12}{price_final}')
         print('----------------------------------------------------------------------------------------------------')
 
-print('Thank you for your business, Good Bye')
+print('Thanks for your business, Good Bye')
