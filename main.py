@@ -1,3 +1,19 @@
+'''
+Gas Station Pricing Calculator
+Group Members: Ben Hunt, Christopher Miller, Noah Germann, William Day, Hussain Alshawi
+Date: 2026-10-08
+
+This program will be used to calculate the prices of Oil or Gas at a gas station when it is being purchased.
+A user will enter input the type of purchase which is either O for Oil, or G for gas.
+Then the user will be prompted to input the amount of Gas or Oil they need in the form of litres or cases respectively. This information will be stored in variables.
+Defined constants for the price of Gas, Oil, and the litres per case of oil.
+The user will also recieve a discount off of their total if they purchase more than a certain amount.
+Using these inputs we will calculate the total price, price before tax, price before and after discount, and the gst that the customer will pay.
+An output is made to display nicely the selection and the calculations to end the program.
+'''
+
+
+
 print("---------------------------------------------")
 print("*** Welcome to gas station program! ***")
 print("---------------------------------------------")
@@ -11,6 +27,7 @@ GAS_LITRE_PRICE = 1.05
 OIL_LITRE_PRICE = 1.25
 LITRES_PER_CASE = 12
 
+# Selection for Oil and Gas
 match selection:
     case "O":
         # Oil option
@@ -45,7 +62,7 @@ match selection:
         print("Invalid input, you should enter g/G or o/O")
         exit()
 
-# Taxes and output
+# Taxes and gst based on province
 gst_percent = 0.0
 
 match province_code.lower():
@@ -86,4 +103,5 @@ match selection:
         print(f'   {'Gas':<12}{(GAS_LITRES):<19}{price_before_discount:<25}{price_before_tax:<18}{(price_before_tax * gst_percent):<12}{price_final}')
         print('----------------------------------------------------------------------------------------------------')
 
+# Program end
 print('Thanks for your business, Good Bye')
